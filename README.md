@@ -11,8 +11,8 @@ Particles were analysed by 20 fields of view at 100x magnification. Used ImageJ 
 (number of particles and area of each) as .xls for each field of view. 
 
 # **Steps**
-1)Particle Size Distribution (PSD) code first combines all .xls files within directory and saves as one .csv file. 
-2)Transform particle area to Equivalent Spherical Diameter (ESD)
+*Particle Size Distribution (PSD) code first combines all .xls files within directory and saves as one .csv file. 
+*Transform particle area to Equivalent Spherical Diameter (ESD)
 2)Then set histogram bin number and sizes dependent of particle sizes.  
 3)Use numpy.histogram to obtain particle counts (ESD) per size bin.
 4)Normalize counts/bin by bin width. 
