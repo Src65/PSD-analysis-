@@ -18,6 +18,6 @@ Particles were analysed by 20 fields of view at 100x magnification. Used ImageJ 
 1. Normalize counts/bin by bin width. 
 1. Filter normalized counts so there are no zeros. 
 1. Function PSD uses parameters to put into optimize.minimize
-1. use optimize.minimize to give best fit variables for power equation 
-1. Plot scatter of the center of bins(X) and normalized counts(Y) on log.log scale and 
-  plot new power equation with variables fromm max.min
+1. use optimize.minimize to give best fit variables for power equation from output variable "x"
+1. Plot scatter of the center of bins without empty bins(X) and normalized counts(Y) without zeros on log.log scale and 
+  plot new power equation with variables fromm max.min  where output is x =[#, #] first term is scaler A and second term is slope B in       equation  Y= A(mid_bins_nozero)^B
