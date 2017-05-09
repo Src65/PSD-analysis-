@@ -11,13 +11,13 @@ Particles were analysed by 20 fields of view at 100x magnification. Used ImageJ 
 (number of particles and area of each) as .xls for each field of view. 
 
 # **Steps**
-*Particle Size Distribution (PSD) code first combines all .xls files within directory and saves as one .csv file. 
-*Transform particle area to Equivalent Spherical Diameter (ESD)
-2)Then set histogram bin number and sizes dependent of particle sizes.  
-3)Use numpy.histogram to obtain particle counts (ESD) per size bin.
-4)Normalize counts/bin by bin width. 
-5)Filter normalized counts so there are no zeros. 
-6)Function PSD uses parameters to put into optimize.minimize
-7)use optimize.minimize to give best fit variables for power equation 
-8)Plot scatter of the center of bins(X) and normalized counts(Y) on log.log scale and 
+* Particle Size Distribution (PSD) code first combines all .xls files within directory and saves as one .csv file. 
+* Transform particle area to Equivalent Spherical Diameter (ESD)
+* Then set histogram bin number and sizes dependent of particle sizes.  
+* Use numpy.histogram to obtain particle counts (ESD) per size bin.
+* Normalize counts/bin by bin width. 
+* Filter normalized counts so there are no zeros. 
+* Function PSD uses parameters to put into optimize.minimize
+* use optimize.minimize to give best fit variables for power equation 
+* Plot scatter of the center of bins(X) and normalized counts(Y) on log.log scale and 
   plot new power equation with variables fromm max.min
