@@ -2,13 +2,13 @@
 
 **Libraries needed:** Pandas, Numpy, glob, matplotlib.pyplot, and from scipy import stats.
 
-Download "raw particle data" file [here](https://github.com/mlmldata2017/Particle-Size-Distribution/blob/master/Particle_ImageJ_script.txt). This file contains contains a number of .xls files. Where ever you save this file make that directory
+Download "[raw particle data](https://github.com/mlmldata2017/Particle-Size-Distribution/blob/master/Raw_particle_data.zip)" file. This file contains contains a number of .xls files. Where ever you save this file make that directory
 "path" in python notebook. 
 
 
 Water samples were taken during summer of 2016 at Stillwater Cove, California at 7m depth. (add GPS point). 
 Particles were analysed by 20 fields of view at 100x magnification. Used ImageJ particle analysis package to obtain raw particle data 
-(number of particles and area of each) as .xls for each field of view. 
+(number of particles and area of each) as .xls for each field of view. Image processing code available [here](https://github.com/mlmldata2017/Particle-Size-Distribution/blob/master/Particle_ImageJ_script.txt) 
 
 # **Steps**
 1. Particle Size Distribution (PSD) code first combines all .xls files within directory and saves as one .csv file. 
