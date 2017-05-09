@@ -2,7 +2,7 @@
 
 **Libraries needed:** Pandas, Numpy, glob, matplotlib.pyplot, and from scipy import stats.
 
-Download "raw particle data" file. This file contains contains a number of .xls files. Where ever you save this file make that directory
+Download "raw particle data" file https://github.com/mlmldata2017/Particle-Size-Distribution/blob/master/Particle_ImageJ_script.txt. This file contains contains a number of .xls files. Where ever you save this file make that directory
 "path" in python notebook. 
 
 
