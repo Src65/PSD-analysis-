@@ -2,8 +2,7 @@
 
 **Libraries needed:** Pandas, Numpy, glob, matplotlib.pyplot, and from scipy import stats.
 
-Download "[raw particle data](https://github.com/mlmldata2017/Particle-Size-Distribution/blob/master/Raw_particle_data.zip)" file. This file contains contains a number of .xls files. Where ever you save this file make that directory
-"path" in python notebook. 
+Download "[raw particle data](https://github.com/mlmldata2017/Particle-Size-Distribution/blob/master/Raw_particle_data.zip)" file. Make this a sub directory from jupyter directory. This file contains contains a number of .xls files. Where ever you save this file make that directory "path" in python notebook cell # 2. 
 
 
 Water samples were taken during summer of 2016 at Stillwater Cove, California at 7m depth. (add GPS point). 
