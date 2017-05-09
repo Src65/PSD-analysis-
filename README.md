@@ -1,6 +1,6 @@
 # Particle-Size-Distribution
 
-**Libraries needed:** Pandas, Numpy, glob, matplotlib.pyplot, and from scipy import stats.
+**Libraries needed:** Pandas, Numpy, glob, matplotlib.pyplot, scipy, and from scipy import stats.
 
 Download "[raw particle data](https://github.com/mlmldata2017/Particle-Size-Distribution/blob/master/Raw_particle_data.zip)" file. Make this a sub directory from jupyter directory. This file contains contains a number of .xls files. Where ever you save this file make that directory "path" in python notebook cell # 2. 
 
@@ -10,7 +10,7 @@ Particles were analysed by 20 fields of view at 100x magnification. Used ImageJ 
 (number of particles and area of each) as .xls for each field of view. Image processing code available [here](https://github.com/mlmldata2017/Particle-Size-Distribution/blob/master/Particle_ImageJ_script.txt) 
 
 # **Steps**
-1. Load libraries: Pandas, Numpy, glob, matplotlib.pyplot, and from scipy import stats
+1. Load libraries: Pandas, Numpy, glob, matplotlib.pyplot, scipy, and from scipy import stats
 1. Particle Size Distribution (PSD) code first combines all .xls files within directory and saves as one .csv file. 
 1. Transform particle area to Equivalent Spherical Diameter (ESD)
 1. Then set histogram bin number and sizes dependent of particle sizes.  
