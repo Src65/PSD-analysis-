@@ -4,7 +4,7 @@
 
 Download "[all_raw particle data](Particle-Size-Distribution/all_raw_data.zip)" file. Make this a sub directory from jupyter directory. This file contains contains a number of .xls files. Where ever you save this file make that directory "path" in python notebook.
 
-Download "[SWC_map_files](Particle-Size-Distribution/SWC_map_files.zip)" for map figure 1.  
+Download "[SWC_map_files](/SWC_map_files.zip)" for map figure 1.  
 
 
 
