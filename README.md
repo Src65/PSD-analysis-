@@ -2,7 +2,7 @@
 
 **Libraries needed:** Pandas, Numpy, glob, matplotlib.pyplot, scipy, from scipy import stats, from cartopy.io import shapereader.
 
-Download "[all_raw particle data](Particle-Size-Distribution/all_raw_data.zip)" file. Make this a sub directory from jupyter directory. This file contains contains a number of .xls files. Where ever you save this file make that directory "path" in python notebook.
+Download "[all_raw particle data](/all_raw_data.zip)" file. Make this a sub directory from jupyter directory. This file contains contains a number of .xls files. Where ever you save this file make that directory "path" in python notebook.
 
 Download "[SWC_map_files](/SWC_map_files.zip)" for map figure 1.  
 
@@ -10,7 +10,7 @@ Download "[SWC_map_files](/SWC_map_files.zip)" for map figure 1.
 
 Water samples were taken during summer of 2016 at Stillwater Cove, California at 7m depth. (add GPS point). 
 Particles were analysed by 20 fields of view at 100x magnification. Used ImageJ particle analysis package to obtain raw particle data 
-(number of particles and area of each) as .xls for each field of view. Image processing code available [here](https://github.com/mlmldata2017/Particle-Size-Distribution/blob/master/Particle_ImageJ_script.txt) 
+(number of particles and area of each) as .xls for each field of view. Image processing code available [here](/Particle_ImageJ_script.txt) 
 
 # **Steps**
 1. Load libraries: Pandas, Numpy, glob, matplotlib.pyplot, scipy, and from scipy import stats
