@@ -1,0 +1,40 @@
+dir = getDirectory("Choose a Directory ");
+n=substring(dir,60,63);
+
+
+input = dir;
+output = dir;
+
+function action(input,output, filename) {
+	open(input + filename);
+	run("Set Scale...", "distance=98 known=100 pixel=1 unit=um");
+	run("8-bit");
+	run("Subtract Background...", "rolling=200 light");
+	//run("Brightness/Contrast...");
+	getMinAndMax(min,max);
+	if (min != 0 && max != 255) run("Apply LUT"); 
+	setMinAndMax(0, 255);
+	setAutoThreshold("Intermodes dark");
+	//run("Threshold...");
+	//setThreshold(129, 255);
+	run("Convert to Mask");
+	run("Variance...", "radius=2");
+	run("Fill Holes");
+	run("Dilate");
+	run("Fill Holes");
+            run("Options...", "iterations=1 count=3 pad");
+            run("Erode");
+            run("Erode");
+	run("Erode");
+	run("Analyze Particles...", "  show=Outlines display clear include summarize");
+ 	path = dir+n+"-"+substring(getTitle(),16,19)+".xls"; 
+	path2 = dir+"image"+".jpg";
+        saveAs("results", path); 
+	saveAs("Jpeg",path);
+        close();
+	
+}
+
+list = getFileList(input);
+for (i = 0; i < list.length-1; i++)
+        action(input, output, list[i]);
